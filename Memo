@@ -1,0 +1,31 @@
+메인
+url: show_info ㅇ
+
+
+커뮤니티
+    url: community ㅇ
+    커뮤니티 글 목록 ㅇ
+    커뮤니티 세부 글 ㅇ
+    커뮤니티 글 작성 x
+
+
+FAQ
+    url: FAQ ㅇ
+    FAQ 글 목록 ㅇ
+
+
+내정보
+    url: my_info x
+    내 정보 출력 x
+    내 정보 수정 x
+
+
+즐겨찾기
+    url: favorites ㅇ
+    (템플릿x) 즐겨찾기 목록 추가 x
+
+로그인&회원가입
+    url: account ㅇ
+    로그인 페이지 x
+    회원가입 페이지 x
+    계정 찾기 페이지 x

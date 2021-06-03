@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Show_Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav>
-    <a href="/show_info/">메인</a>
-    <a href="/community/">커뮤니티</a>
-    <a href="">FAQ</a>
-    <div style="float:right;"><a>&nbsp&nbsp&nbsp</a></div>
-    <div style="float:right;"><a href="">회원가입</a></div>
-    <div style="float:right;"><a>&nbsp&nbsp&nbsp</a></div>
-    <div style="float:right;"><a href="">로그인</a></div>
+
+    <nav>
+        <a href="/show_info/">메인</a>
+        <a href="/community/">커뮤니티</a>
+        <a href="/FAQ/">FAQ</a>
+        <a href="/account/">로그인</a>
+        <a href="">회원가입</a>
+        <a href="/favorites/">즐겨찾기</a>
+        <a href="/my_info/">내 정보</a>
+    </nav>
+    <h1>메인</h1>
 
 
- </nav>
-<h1>Test</h1>
-<select>
-    {% for p in provinces %}
+    <select>
+        {% for p in provinces %}
         <option value={{p}}>{{p}}</option>
-    {% endfor %}
-</select>
-<select>
-    {% for ci in cities %}
-    <option value={{ci}}>{{ci}}</option>
-    {% endfor %}
-</select>
-<select>
-    {% for co in counties %}
-    <option value={{co}}>{{co}}</option>
-    {% endfor %}
-</select>
+        {% endfor %}
+    </select>
+    <select>
+        {% for ci in cities %}
+        <option value={{ci}}>{{ci}}</option>
+        {% endfor %}
+    </select>
+    <select>
+        {% for co in counties %}
+        <option value={{co}}>{{co}}</option>
+        {% endfor %}
+    </select>
 
 </body>
 </html>
+<!--
+<a href="/show_info/">메인</a>
+        <a href="/community/">커뮤니티</a>
+        <a href="">FAQ</a>
+        <a href="">로그인</a>
+-->
