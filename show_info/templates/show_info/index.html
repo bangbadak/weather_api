@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Show_Info</title>
+</head>
+<body>
+<nav>
+    <a href="/show_info/">메인</a>
+    <a href="/community/">커뮤니티</a>
+    <a href="">FAQ</a>
+    <div style="float:right;"><a>&nbsp&nbsp&nbsp</a></div>
+    <div style="float:right;"><a href="">회원가입</a></div>
+    <div style="float:right;"><a>&nbsp&nbsp&nbsp</a></div>
+    <div style="float:right;"><a href="">로그인</a></div>
+
+
+ </nav>
+<h1>Test</h1>
+<select>
+    {% for p in provinces %}
+        <option value={{p}}>{{p}}</option>
+    {% endfor %}
+</select>
+<select>
+    {% for ci in cities %}
+    <option value={{ci}}>{{ci}}</option>
+    {% endfor %}
+</select>
+<select>
+    {% for co in counties %}
+    <option value={{co}}>{{co}}</option>
+    {% endfor %}
+</select>
+
+</body>
+</html>
