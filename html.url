@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 [{000214A0-0000-0000-C000-000000000046}]
 Prop3=19,2
 [InternetShortcut]
 IDList=
 URL=http://127.0.0.1:8000/my_info/
+=======
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+IDList=
+URL=http://127.0.0.1:8000/my_info/
+>>>>>>> ffb029e174e144a0ab45ee6f859c2b4583a8796b
