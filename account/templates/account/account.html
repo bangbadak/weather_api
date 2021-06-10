@@ -21,5 +21,12 @@
         <a href="/my_info/">내 정보</a>
     </nav>
     <h3>로그인</h3>
+    로그인<br/>
+    <form name="ID" method="post">
+        {% csrf_token %}
+        이메일 : <input type="text" name="email" size="20"><br/>
+        비밀번호 : <input type="password" name="password" size="20"><br/>
+        <input type="submit" value="로그인">
+    </form>
 </body>
 </html>
