@@ -6,7 +6,7 @@ def index(request):
     provinces = Province.objects.all()
     cities = City.objects.all()
     counties = County.objects.all()
-
+    print("provinces : ", provinces)
     return render(
         request,
         'show_info/index.html',
