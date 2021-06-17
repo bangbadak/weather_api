@@ -1,9 +1,11 @@
 from django import forms
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
 
-class ID(forms.Form):
-    title = forms.IntegerField()
-    email = forms.CharField(max_length=30)
-    password = forms.CharField(max_length=16)
 
-    def __str__(self):
-        return f'ID_{self.pk}'
+class UserForm(UserCreationForm):
+    email = forms.EmailField(label="이메일")
+
+    class Meta:
+        model = User
+        fields = ("username", "email")
