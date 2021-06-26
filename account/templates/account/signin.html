@@ -13,21 +13,24 @@
 </head>
 <body>
     <nav>
-        <a href="/show_info/">메인</a>
-        <a href="/community/">커뮤니티</a>
-        <a href="/FAQ/">FAQ</a>
-        <a href="/account/Login/">로그인</a>
-        <a href="/account/register/">회원가입</a>
-        <a href="/favorites/">즐겨찾기</a>
-        <a href="/my_info/">내 정보</a>
+        <div class="container my-3">
+            <a href="/show_info/">메인</a>
+            <a href="/community/">커뮤니티</a>
+            <a href="/FAQ/">FAQ</a>
+            <a href="/account/signin/">로그인</a>
+            <a href="/account/register/">회원가입</a>
+            <a href="/favorites/">즐겨찾기</a>
+            <a href="/my_info/">내 정보</a>
+        </div>
+
     </nav>
     <div class="container my-3">
-        <form method="post" class="post-form" action="{% url 'account:Login' %}">
+        <form method="post" class="post-form" action="{% url 'account:signin' %}">
             {% csrf_token %}
             <div class="form-group">
-                <label for="username">사용자ID</label>
-                <input type="text" class="form-control" name="username" id="username"
-                       value="{{ form.username.value|default_if_none:'' }}">
+                <label for="email">이메일</label>
+                <input type="text" class="form-control" name="email" id="email"
+                       value="{{ form.email.value|default_if_none:'' }}">
             </div>
             <div class="form-group">
                 <label for="password">비밀번호</label>
