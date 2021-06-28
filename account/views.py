@@ -19,11 +19,13 @@ def signin(request):
     if request.method == "POST":
         email = request.POST['email']
         password = request.POST['password']
-        user = auth.authenticate(request, email=email, password=password)
+        user = authenticate(request, email=email, password=password)
         if user is not None:
-            auth.login(request, user)
+            print("if_1")
+            login(request, user)
             return redirect('show_info')
         else:
+            print("if_2")
             return render(request, 'account/signin.html', {'error': 'email or password is incorrect'})
     else:
         return render(request, 'account/signin.html')
