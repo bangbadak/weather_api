@@ -1,7 +1,4 @@
 from django.contrib import admin
-from .models import Province, City, County
-
+from .models import Weather
 # Register your models here.
-admin.site.register(Province)
-admin.site.register(City)
-admin.site.register(County)
+admin.site.register(Weather)
